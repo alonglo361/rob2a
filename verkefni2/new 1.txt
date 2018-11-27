@@ -1,0 +1,13 @@
+for(int i = 1; i<5;i++){
+		drive_forward(drive_time, i);
+		drive_backward(drive_time, i);
+	}
+
+
+// Þvermál dekkjar: 10.16 centimeters 
+// Ummál(circumference) dekkjar: ~33.0 cm
+
+//Dæmi 2.2: "(distance / circumference) * 360" er til þess að fara í sérstaka lengd. Ef distance var 50cm þá fer hann 50cm með þessari jöfnu.
+
+//Dæmi 2.3: Til að snúa um 90° er þá gert "BASETURN * 90", þar sem BASETURN er "D / d", og D = lengdin á milli tvemur dekkja í ská (sem er 33,5cm) og d er þvermál dekk (10.16)
+// Þannig að "BASETURN * 90", "BASETURN = 33.5 / 10.16"
